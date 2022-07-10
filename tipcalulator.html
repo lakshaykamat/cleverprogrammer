@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-
+  <h1 id="priceofmeal"></h1><br>
+  <h1 id="tipAmount"></h1><br>
+<h1 id="totalTipAmount"></h1>
   <body>
     <script>
       function addTipToPrice(price, tip) {
+        //add tip to price
         return price + tipCalc(tip, price);
       }
 
       function tipCalc(tip, price) {
+        //caclulating tip
         return (tip / 100) * price;
       }
+
+      //DOM Elements
+      priceElem = document.getElementById('priceofmeal');
+      tipElem = document.getElementById('tipAmount');
+      totalElem = document.getElementById('totalTipAmount');
 
       const priceofFood = Number(prompt("Price of Meal"));
 
@@ -25,14 +34,11 @@
 
       const tipAmount = tipCalc(tipPercentage, priceofFood);
 
-      const finalAmount = Math.floor(addTipToPrice(priceofFood, tipPercentage));
+      const finalAmount = addTipToPrice(priceofFood, tipPercentage);
 
-      alert(`
-Meal Amount $${priceofFood}
-
-Tip Amount $${tipAmount}(${tipPercentage}%)
-
-Total Amount is $${finalAmount}`);
+      priceElem.textContent = ` Meal Amount: $${priceofFood}`
+      tipElem.textContent = `Total Tip is: $${tipAmount}  (${tipPercentage}%)`
+      totalElem.textContent = `Total Amount is: $${finalAmount}`
     </script>
   </body>
 </html>
