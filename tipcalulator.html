@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      function addTipToPrice(price, tip) {
+        return price + tipCalc(tip, price);
+      }
+
+      function tipCalc(tip, price) {
+        return (tip / 100) * price;
+      }
+
+      const priceofFood = Number(prompt("Price of Meal"));
+
+      const tipPercentage = Number(
+        prompt("Enter Tip amount in (%) You want to pay")
+      );
+
+      const tipAmount = tipCalc(tipPercentage, priceofFood);
+
+      const finalAmount = Math.floor(addTipToPrice(priceofFood, tipPercentage));
+
+      alert(`
+Meal Amount $${priceofFood}
+
+Tip Amount $${tipAmount}(${tipPercentage}%)
+
+Total Amount is $${finalAmount}`);
+    </script>
+  </body>
+</html>
