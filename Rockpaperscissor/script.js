@@ -14,18 +14,51 @@
 // getComputerChoice() 👉 'Rock'
 // getComputerChoice() 👉 'Scissors'
 function getComputerChoice() {
-  
+    let choice
+  randomNum = Math.floor(Math.random() * 3)
+  if(randomNum === 0){
+    choice = 'Rock'
+  }else if( randomNum === 1){
+    choice = 'Paper'
+  }else{
+    choice = 'Scissors'
+  }
+return choice
 }
-
 // ** getResult compares playerChoice & computerChoice and returns the score accordingly **
 // human wins - getResult('Rock', 'Scissors') 👉 1
 // human loses - getResult('Scissors', 'Rock') 👉 -1
 // human draws - getResult('Rock', 'Rock') 👉 0
 function getResult(playerChoice, computerChoice) {
   // return the result of score based on if you won, drew, or lost
+  let userScore = 0
+  let compScore
+  if(playerChoice == computerChoice){
+    userScore += 0
+    compScore = 0
+  }else if(playerChoice == 'Rock' && computerChoice =='Paper'){
+    userScore += -1
+    compScore = 1
+  }else if(playerChoice == 'Rock' && computerChoice =='Scissors'){
+    userScore += 1
+    compScore = -1
+  }else if(playerChoice == 'Paper' && computerChoice == 'Rock'){
+    userScore += 1
+    compScore = -1
+  }else if(playerChoice == 'Paper' && computerChoice == 'Scissors'){
+    userScore  += -1
+    compScore = 1
+  }else if(playerChoice == 'Scissors' && computerChoice == 'Rock'){
+    userScore += -1
+    compScore = 1
+  }else if(playerChoice == 'Scissors' && computerChoice == 'Paper'){
+    userScore += 1
+    compScore = -1
+  }else{
+    console.log("Fatal Error")
+  }
   
-  
-
+return userScore
   // All situations where human draws, set `score` to 0
   
 
@@ -56,7 +89,10 @@ function onClickRPS(playerChoice) {
 // ** Make the RPS buttons actively listen for a click and do something once a click is detected **
 function playGame() {
   // use querySelector to select all RPS Buttons
-
+userChoice = document.querySelectorAll('.rpsButton')
+userChoice.forEach( function(){
+  userChoice.onClick
+})
   // * Adds an on click event listener to each RPS button and every time you click it, it calls the onClickRPS function with the RPS button that was last clicked *
   
   // 1. loop through the buttons using a forEach loop

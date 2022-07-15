@@ -4,7 +4,10 @@ html, body {
     padding: 0;
     margin:0;
   }
-  
+  h1{
+    text-align: center;
+    font-size: 2rem;
+  }
   .wrapper {
     background: #1c1c1c;
     color: white;
@@ -18,12 +21,13 @@ html, body {
   
   .buttons {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
   }
   
   button {
-    /* height: 100px; */
-    /* width: 100px; */
     cursor: pointer;
     padding: 1.5rem;
     border: none;
@@ -33,8 +37,8 @@ html, body {
   }
   img{
     width: 80px;
-    opacity: .8;
-  }
+    height: 80px;
+}
   .resultContainer {
     font-size: 2rem;
     text-align: center;
