@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 *{
     /* outline: 1px solid; */
+    font-family: 'Abel', sans-serif;
     transition: .5s all ease;
     margin: 0;
     padding: 0;
@@ -7,7 +9,6 @@
 body{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .headingDiv{
@@ -45,6 +46,7 @@ body{
     padding: .3rem .7rem;
     border: none;
     transition: none;
+    font-size: 1.5rem;
     outline: 1px solid;
 }
 svg{
@@ -57,10 +59,9 @@ hr{
 }
 main{
     margin: 1rem;
-    outline: 1px solid;
+    /* outline: 1px solid; */
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
 }
 .heroimg{
@@ -68,11 +69,10 @@ main{
     height: auto;
 }
 #superheroImg{
-    outline: 1px solid;
     margin: 1rem
 }
 #powerStatsDiv{
-    outline: 1px solid;
+    /* outline: 1px solid; */
     margin: 1rem;
 }
 .listcontainer{
@@ -83,10 +83,10 @@ main{
     padding: .4rem;
 }
 #biographyDiv{
-    outline: 1px solid;
+    /* outline: 1px solid; */
     margin: 1rem;
 }
 #appearnceDiv{
-    outline: 1px solid;
+    /* outline: 1px solid; */
     margin: 1rem;
 }
