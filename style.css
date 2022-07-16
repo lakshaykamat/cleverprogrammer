@@ -1,0 +1,73 @@
+*{
+    /* outline: 1px solid; */
+    transition: .5s all ease;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.headingDiv{
+    margin: 1rem;
+}
+.heading{
+    text-align: center;
+    padding: .3rem;
+}
+.inputDiv{
+    margin: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem;
+}
+.btn{
+    margin: .5rem;
+    padding: .6rem 1.5rem;
+    border: none;
+}
+hr{
+    margin: .5rem;
+    width: 98%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+#superheroImg{
+    margin: 1rem
+}
+.heroheading{
+    text-align: start;
+}
+#powerstatsDiv{
+    margin: 1rem;
+}
+.powerstats{
+    margin: 1rem;
+    list-style: none;
+}
+.item{
+    padding: .4rem;
+}
+.powerstatsheading{
+    font-size: 1.4rem;
+}
+#biographyDiv{
+    margin: 1rem;
+}
+.biographyheading{
+    font-size: 1.4rem;
+}
