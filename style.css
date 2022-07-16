@@ -14,8 +14,17 @@ body{
     margin: 1rem;
 }
 .heading{
+    font-size: 2.5rem;
     text-align: center;
     padding: .3rem;
+}
+.heronameheading{
+    text-align: start;
+    text-align: 1.5rem;
+}
+.heading1{
+    text-align: start;
+    font-size: 1.4rem;
 }
 .inputDiv{
     margin: .5rem;
@@ -33,41 +42,51 @@ body{
 }
 .btn{
     margin: .5rem;
-    padding: .6rem 1.5rem;
+    padding: .3rem .7rem;
     border: none;
+    transition: none;
+    outline: 1px solid;
+}
+svg{
+    width: 20px;
+    height: 20px;
 }
 hr{
     margin: .5rem;
     width: 98%;
 }
 main{
+    margin: 1rem;
+    outline: 1px solid;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
 }
+.heroimg{
+    width: 100%;
+    height: auto;
+}
 #superheroImg{
+    outline: 1px solid;
     margin: 1rem
 }
-.heroheading{
-    text-align: start;
-}
-#powerstatsDiv{
+#powerStatsDiv{
+    outline: 1px solid;
     margin: 1rem;
 }
-.powerstats{
+.listcontainer{
     margin: 1rem;
     list-style: none;
 }
 .item{
     padding: .4rem;
 }
-.powerstatsheading{
-    font-size: 1.4rem;
-}
 #biographyDiv{
+    outline: 1px solid;
     margin: 1rem;
 }
-.biographyheading{
-    font-size: 1.4rem;
+#appearnceDiv{
+    outline: 1px solid;
+    margin: 1rem;
 }
