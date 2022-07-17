@@ -56,19 +56,18 @@ body {
 
 .btn {
     margin: .5rem;
-    padding: .3rem .7rem;
+    padding: .3rem 1.2rem;
     border: none;
     transition: none;
     font-size: 1.5rem;
     outline: 1px solid;
-}
-
-svg {
-    width: 20px;
-    height: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 hr {
+    color: #000;
     margin: auto;
     margin: .5rem;
     width: 95%;
