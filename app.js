@@ -21,8 +21,8 @@ const searchSuperHero = ()=> {
             getSuperHeroName(json.results[0].name)
             getSuperHeroImage(json.results[0].image.url)
             getPowerStats(json.results[0].powerstats)
-            // getSuperHeroBiography(json.biography)
-            // getSuperHeroAppearnce(json.appearance)
+            getSuperHeroBiography(json.results[0].biography)
+            getSuperHeroAppearnce(json.results[0].appearance)
         })
 }
 //Random super hero API function
@@ -73,15 +73,17 @@ const getPowerStats = (powerstats) => {
 
 //Get Super Hero Biography
 const getSuperHeroBiography = (biography) => {
+    biographyDiv.style.outline = '1px solid'
     biographyDiv.innerHTML = `
     <div class="headingDiv">
     <h1 class="heading1">Biography</h1>
 </div>
+<hr>
 <ul class="listcontainer">
     <li class="item">Full Name: ${biography.fullName}</li>
     <li class="item">Place-of-birth: ${biography.placeOfBirth}</li>
-    <li class="item">First Appearance: Batman Beyond #1</li>
-    <li class="item">Publisher: DC Comics</li>
+    <li class="item">First Appearance: ${biography.firstAppearance}</li>
+    <li class="item">Publisher: ${biography.publisher}</li>
 </ul>`
 }
 
@@ -92,11 +94,12 @@ const getSuperHeroAppearnce = (appearance) => {
         `<div class="headingDiv">
                 <h1 class="heading1">Appearance</h1>
             </div>
+            <hr>
             <ul class="listcontainer">
                 <li class="item">Gender: ${appearance.gender}</li>
                 <li class="item">Race: ${appearance.race}</li>
                 <li class="item">Height: ${appearance.height[0]}</li>
-                <li class="item">Weight: ${appearance.weight[0]}</li>
+                <li class="item">Weight: ${appearance.weight[1]}</li>
                 <li class="item">Eye color: ${appearance.eyecolor}</li>
                 <li class="item">Hair color : ${appearance.haircolor}</li>
             </ul>`
